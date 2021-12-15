@@ -36,9 +36,9 @@
     flex-direction: row;
 }
 
-a{
-    outline: none;
-    color: black;
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Fin selecteur globaux */
@@ -53,7 +53,10 @@ body{
     flex-direction: column;
 }
 
-
+a{
+    color: black;
+    outline: none;
+}
 /* header */
 
 header{
@@ -64,7 +67,7 @@ header{
 }
 
 #logo-computer-device{
-    min-width: 25%;
+    min-width: 17%;
     min-height: 10em;
     background: green;
 }
@@ -89,14 +92,19 @@ header{
 #explorer-nav{
 }
 
+ul{
+    list-style-type: none;
+}
+
 .img-icon-header{
     width: 1em;
     height: 100%;
     margin: 0 0.4em 0 0;
 }
 .li-spacing{
-    margin: 0 1em 0 1em;
+    margin: 0 0.5em 0 0.5em;
 }
+
 /* fin header */
 
 main{
