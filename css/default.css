@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: "Montserrat-Black";
-    src: url("misc/Montserrat-Black.ttf");
+    src: url("../misc/Montserrat-Black.ttf");
     }
 
 @font-face {
     font-family: "Montserrat-Bold";
-    src: url("misc/Montserrat-Bold.ttf");
+    src: url("../misc/Montserrat-Bold.ttf");
     }
 
 @font-face {
     font-family: "Montserrat-Light";
-    src: url("misc/Montserrat-Light.ttf");
+    src: url("../misc/Montserrat-Light.ttf");
     }
 
 @font-face {
     font-family: "Montserrat-Medium";
-    src: url("misc/Montserrat-Medium.ttf");
+    src: url("../misc/Montserrat-Medium.ttf");
     }
 
 /* selecteur globaux */
@@ -25,6 +25,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Montserrat-Medium;
 }
 
 .row-inline-block{
@@ -36,9 +37,13 @@
     flex-direction: row;
 }
 
-.flex-column{
-    display: flex;
-    flex-direction: column;
+a{
+    outline: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
 }
 
 /* Fin selecteur globaux */
@@ -53,47 +58,54 @@ body{
     flex-direction: column;
 }
 
-a{
-    color: black;
-    outline: none;
-}
+
 /* header */
 
 header{
     background: #fff;
-    min-height: 15%;
     display: flex;
     flex-direction: row;
+    min-height: 9em;
 }
 
 #logo-computer-device{
-    min-width: 17%;
-    min-height: 10em;
-    background: green;
+    width: 20em;
+    margin: auto auto auto 1em;
+}
+
+#logo-img{
+    width: 100%;
+    margin: auto;
+    display: inline-block;
 }
 
 #nav-layer{
     width: 100%;
+    margin: 0 1em 0 0;
 }
 
-#research-bar{
+#researchbar-contener{
     margin: 2em 1em 0 1em;
     min-height: 4em;
-    background-color: yellowgreen;
+}
+
+#searchbar{
+    width: 100%;
+    height: 4em;
+    border: rgb(255, 115, 0) 2px solid;
+    color: rgb(255, 115, 0);
+    font-size: 1em;
+    padding: 0 0 0 1em;
+    background: rgb(230, 230, 230);
 }
 
 #head-nav{
-    margin: 1em 1em 0 1em;
-    font-family: Montserrat-Light;
-    font-size: 1.5em;
+    margin: 0.5em 0.5em 0 0.5em;
+    font-size: 1em;
     justify-content: space-between;
 }
 
 #explorer-nav{
-}
-
-ul{
-    list-style-type: none;
 }
 
 .img-icon-header{
@@ -102,9 +114,8 @@ ul{
     margin: 0 0.4em 0 0;
 }
 .li-spacing{
-    margin: 0 0.5em 0 0.5em;
+    margin: 0 1em 0 1em;
 }
-
 /* fin header */
 
 main{
